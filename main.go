@@ -21,7 +21,7 @@ func main() {
 	defer cancel()
 	chromedp.Run(ctx, chromedp.Sleep(time.Second))
 	kw := "天气"
-	html := ""
+	//html := ""
 	title := ""
 	//var nodes []*cdp.Node
 	err := chromedp.Run(
@@ -42,7 +42,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println(strings.TrimSpace(html))
+	//log.Println(strings.TrimSpace(html))
 	log.Println(strings.TrimSpace(title))
 	//for _, node := range nodes {
 	//	jsonStr,_ := node.MarshalJSON()
